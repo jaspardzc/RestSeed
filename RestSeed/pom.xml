@@ -41,6 +41,8 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- Jackson lib for JSON Object Mapping -->
+		
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
@@ -83,6 +85,46 @@
 			<version>1.8</version>
 		</dependency>
 		
+		<!-- Apache Commons Libraries -->
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-collections4</artifactId>
+		    <version>4.1</version>
+		</dependency>
+		
+		<!-- Log4j Logging Framework -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>2.6.2</version>
+		</dependency>
+		
+		<!-- Utilities Framework -->
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+		<dependency>
+		    <groupId>org.apache.pdfbox</groupId>
+		    <artifactId>pdfbox</artifactId>
+		    <version>2.0.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/preflight -->
+		<dependency>
+		    <groupId>org.apache.pdfbox</groupId>
+		    <artifactId>preflight</artifactId>
+		    <version>2.0.2</version>
+		</dependency>
+
+
+
 		<!-- Spring Dependencies -->
 		
         <!-- Spring framework -->
@@ -110,7 +152,19 @@
 		</dependency>
 		
 		<!-- Spring Data JDBC dependencies -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb -->
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-mongodb</artifactId>
+		    <version>1.9.2.RELEASE</version>
+		</dependency>
 		
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-jpa</artifactId>
+		    <version>1.10.2.RELEASE</version>
+		</dependency>
 		
 		
 		
