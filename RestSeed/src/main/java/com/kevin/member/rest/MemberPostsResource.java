@@ -1,4 +1,4 @@
-package com.kevin.member.service;
+package com.kevin.member.rest;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -28,8 +28,11 @@ import com.kevin.member.domain.User;
  *
  */
 @Path("/mime")
-public class MimeService {
+public class MemberPostsResource {
 	
+	/**
+	 * @deprecated
+	 */
 	@POST
 	@Path("/member")
 	@Consumes({MediaType.APPLICATION_JSON})
@@ -46,11 +49,11 @@ public class MimeService {
 		user.setEmail("kevinzengdev@gmail.com");
 		user.setFirstName(firstname);
 		user.setLastName(lastname);
-		user.setMobile("520397415");
 		user.setOccupation("softwware engineer");
 		
 		return user;
 	}
+	
 	
 	@GET
 	@Path("/pdf")

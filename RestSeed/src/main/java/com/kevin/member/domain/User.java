@@ -1,7 +1,11 @@
 package com.kevin.member.domain;
 
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "User")
 public class User {
+	
+	private String userId;
 	
 	private String firstName;
 
@@ -11,12 +15,20 @@ public class User {
 
 	private String email;
 
-	private String mobile;
+	private String role;
 
 	private String occupation;
 	
 	public User() {}
 	
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -41,11 +53,11 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getMobile() {
-		return mobile;
+	public String getRole() {
+		return role;
 	}
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
+	public void setRole(String role) {
+		this.role = role;
 	}
 	public String getOccupation() {
 		return occupation;
